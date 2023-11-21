@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+.background{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+.ltr-1{
+    color: #f69220;
+    text-shadow:0px 0px 5px blue;
+}
+.ltr-2{
+    color: rgb(76, 133, 255);
+}
+.icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.container-1{
+    min-width: 320px;
+    width: 700px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+align-items: center;
+
+}
+.box-1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 10px;
+font-size: 25px; 
+}
+.btn-1{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-self: center;
+    width: 75%;
+    padding: 5px 0px;
+    border-radius: 20px;
+    background-color: rgb(116, 169, 250);
+    color: #fff;
+    font-size: 20px;
+position: relative;
+}
+.fa-google{
+    position: absolute;
+    left: 5%;
+    top: 25%;
+}
+.btn-1 a{
+    color: #fff;
+    text-decoration: none;
+}
+h3{
+width: 75%;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    align-items: center;
+    gap: 20px;
+}
+h3::before,h3::after{
+    content:" ";
+    height: 2px;
+    width: 100%;
+    background-color: #000000;
+    display: block;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    gap: 5px;
+    
+}
+input{
+    border-radius: 5px;
+    border: none;
+outline: none;
+    padding: 5px;
+}
+.important{
+    color: red;
+}
+.btn-2{
+    color: #fff;
+    font-weight: bolder;
+    width: 75%;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(18, 209, 18);
+}
+.btn-2 a{
+    text-decoration: none;
+    color: #fff;
+}
+.fooder{
+    align-self: end;
+    padding-right: 20px;
+}
+.fooder a{
+    text-decoration: none;
+    color: blue;
+}
+@media screen and (max-width:375px) {
+    .btn-1{
+        font-size: 15px;
+    }
+    .btn-1 .fa-google{
+        position: relative;
+        left: 0;
+        top: 2px;
+    }
+    
+}
